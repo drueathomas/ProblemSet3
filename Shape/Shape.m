@@ -12,10 +12,25 @@
 
 @synthesize widthInFeet, heightInFeet;
 
-+ (float)shapeArea
+- (void)setHeightInMeters:(NSNumber *)h
 {
-    float h = [self heightInFeet];
-    return h * [self widthInFeet];
+    
+    heightInFeet = h;
+}
+
+
+- (void)setWidthInMeters:(NSNumber *)w
+{
+    widthInFeet= w;
+}
+
+
++ (NSNumber *)shapeArea
+{
+    NSNumber *h = [self heightInFeet];
+    NSNumber *w = [self widthInFeet];
+    
+    return h * w;
 }
 
 

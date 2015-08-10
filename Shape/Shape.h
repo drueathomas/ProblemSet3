@@ -11,18 +11,18 @@
 @interface Shape : NSObject
 
 //properties for Shape
-@property float heightInFeet;
-@property float widthInFeet;
+@property NSNumber *heightInFeet;
+@property NSNumber *widthInFeet;
 
 
 // setter declarations
-- (float)heightInFeet;
-- (void)setHeightInFeet:(float)h;
-- (float)widthInFeet;
-- (void)setWidthInFeet:(float)w;
+- (NSNumber *)heightInFeet;
+- (void)setHeightInFeet:(NSNumber *)h;
+- (NSNumber *)widthInFeet;
+- (void)setWidthInFeet:(NSNumber *)w;
 
 // instance method that calculates area
-+ (float)shapeArea;
++ (NSNumber *)shapeArea;
 
 
 @end
