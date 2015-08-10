@@ -26,7 +26,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Shape \"rec\" is %.2f Feet tall and %.2f Feet wide.", height, width);
         
         // Log some values using custom methods
-        float recArea = [[Shape self] shapeArea];
+        float recArea = [rec shapeArea];
         NSLog(@"\"rec\" has an area of %.2f.", recArea);
         
     }

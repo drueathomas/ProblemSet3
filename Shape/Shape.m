@@ -26,11 +26,12 @@
 }
 
 
-+ (float)shapeArea
+- (float)shapeArea
 {
-
+    float h = [self heightInFeet];
     
-    return [[Shape self] heightInFeet] * [[Shape self] widthInFeet];
+    return h * [self widthInFeet];
+    
 }
 
 
