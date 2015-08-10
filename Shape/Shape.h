@@ -22,8 +22,7 @@
 - (void)setWidthInFeet:(float)w;
 
 // instance method that calculates area
-- (float)shapeArea;
-
++ (float)shapeArea;
 
 
 @end

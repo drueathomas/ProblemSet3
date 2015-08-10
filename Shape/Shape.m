@@ -12,7 +12,7 @@
 
 @synthesize widthInFeet, heightInFeet;
 
-- (float)shapeArea
++ (float)shapeArea
 {
     float h = [self heightInFeet];
     return h * [self widthInFeet];
