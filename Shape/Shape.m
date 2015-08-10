@@ -10,27 +10,27 @@
 
 @implementation Shape
 
-@synthesize widthInFeet, heightInFeet;
+@synthesize heightInFeet, widthInFeet;
 
-- (void)setHeightInMeters:(NSNumber *)h
+
+- (void)setHeightInMeters:(float)h
 {
     
     heightInFeet = h;
 }
 
 
-- (void)setWidthInMeters:(NSNumber *)w
+- (void)setWidthInMeters:(float)w
 {
     widthInFeet= w;
 }
 
 
-+ (NSNumber *)shapeArea
++ (float)shapeArea
 {
-    NSNumber *h = [self heightInFeet];
-    NSNumber *w = [self widthInFeet];
+
     
-    return h * w;
+    return [[Shape self] heightInFeet] * [[Shape self] widthInFeet];
 }
 
 
