@@ -11,20 +11,23 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Shape *sphere = [[Shape alloc] init];
+        //create a shape object; allocate in memory
         
-        // Give the instance variables interesting values using setters
-        [sphere setWidthInMeters:96];
-        [sphere setHeightInMeters:44];
+        Shape *rec = [[Shape alloc] init];
         
-        // Log the instance variables using the getters
-        float height = [sphere heightInMeters];
-        int width = [sphere widthInMeters];
-        NSLog(@"sphere is %f meters tall and %d meters wide", height, width);
+        //set values for height and width
+        
+        [rec setWidthInFeet:12];
+        [rec setHeightInFeet:5];
+        
+        // hold values for method returns
+        float height = [rec heightInFeet];
+        float width = [rec widthInFeet];
+        NSLog(@"Shape \"rec\" is %.2f Feet tall and %.2f Feet wide.", height, width);
         
         // Log some values using custom methods
-        float sphereArea = [sphere shapeArea];
-        NSLog(@"sphere has an area of %f", sphereArea);
+        float recArea = [rec shapeArea];
+        NSLog(@"\"rec\" has an area of %.2f.", recArea);
         
     }
     return 0;
