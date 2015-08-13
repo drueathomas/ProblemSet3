@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E343EE691B784800003F086D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E343EE681B784800003F086D /* main.m */; };
 		E343EE701B784863003F086D /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = E343EE6F1B784863003F086D /* Shape.m */; };
+		E343EE9B1B7D57E7003F086D /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = E343EE9A1B7D57E7003F086D /* Circle.m */; };
+		E343EE9E1B7D59C0003F086D /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = E343EE9D1B7D59C0003F086D /* Square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		E343EE681B784800003F086D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E343EE6F1B784863003F086D /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 		E343EE711B78487E003F086D /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		E343EE991B7D570A003F086D /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		E343EE9A1B7D57E7003F086D /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		E343EE9C1B7D5945003F086D /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		E343EE9D1B7D59C0003F086D /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				E343EE681B784800003F086D /* main.m */,
-				E343EE6F1B784863003F086D /* Shape.m */,
 				E343EE711B78487E003F086D /* Shape.h */,
+				E343EE6F1B784863003F086D /* Shape.m */,
+				E343EE991B7D570A003F086D /* Circle.h */,
+				E343EE9A1B7D57E7003F086D /* Circle.m */,
+				E343EE9C1B7D5945003F086D /* Square.h */,
+				E343EE9D1B7D59C0003F086D /* Square.m */,
 			);
 			path = Shape;
 			sourceTree = "<group>";
@@ -123,6 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E343EE9E1B7D59C0003F086D /* Square.m in Sources */,
+				E343EE9B1B7D57E7003F086D /* Circle.m in Sources */,
 				E343EE691B784800003F086D /* main.m in Sources */,
 				E343EE701B784863003F086D /* Shape.m in Sources */,
 			);
@@ -241,6 +253,7 @@
 				E343EE6E1B784800003F086D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

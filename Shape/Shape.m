@@ -13,23 +13,23 @@
 @synthesize heightInFeet, widthInFeet;
 
 
-- (void)setHeightInMeters:(float)h
-{
-    
-    heightInFeet = h;
-}
-
-
-- (void)setWidthInMeters:(float)w
-{
-    widthInFeet= w;
-}
-
-
+//- (void)setHeightInMeters:(float)h
+//{
+//    
+//    heightInFeet = h;
+//}
+//
+//
+//- (void)setWidthInMeters:(float)w
+//{
+//    widthInFeet= w;
+//}
+//
+//
 - (float)shapeArea
 {
     float h = [self heightInFeet];
-    
+   
     return h * [self widthInFeet];
     
 }
