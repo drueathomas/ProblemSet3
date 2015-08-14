@@ -11,8 +11,6 @@
 
 @interface Square : Shape
 
-- (BOOL) isItSquare
-{
-    if((self.lengthInFeet) != (self.heightInFeet))
-        return 
-}
+- (void) widthToHeight;
+
+@end

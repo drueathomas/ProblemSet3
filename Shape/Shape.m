@@ -10,22 +10,7 @@
 
 @implementation Shape
 
-@synthesize heightInFeet, widthInFeet;
 
-
-//- (void)setHeightInMeters:(float)h
-//{
-//    
-//    heightInFeet = h;
-//}
-//
-//
-//- (void)setWidthInMeters:(float)w
-//{
-//    widthInFeet= w;
-//}
-//
-//
 - (float)shapeArea
 {
     float h = [self heightInFeet];

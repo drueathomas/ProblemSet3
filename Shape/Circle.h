@@ -14,3 +14,5 @@
 @property float radiusInFeet;
 
 - (float) shapeArea;
+
+@end

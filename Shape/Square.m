@@ -7,3 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Square.h"
+
+@implementation Square
+
+
+
+- (void) widthToHeight{
+    
+    self.widthInFeet = self.heightInFeet;
+    
+    
+}
+
+
+@end

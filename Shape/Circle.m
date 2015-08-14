@@ -8,9 +8,6 @@
 
 #import "Circle.h"
 
-@synthesize radiusInFeet;
-
-
 @implementation Circle
 
 - (float) shapeArea
