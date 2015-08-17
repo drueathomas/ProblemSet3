@@ -12,38 +12,38 @@ A dog would inherit the traits of a mammal: warm blooded, breathes air, moves, e
 The *Dog* class probably needs a few unique methods as well that are inherent specifically to dogs but not necessarily to mammals. For exmaple, *bark* or *wagTail*. It might also want to use a *Animal* method but in a different way. Say for instance you have a method that calls an animal called *callAnimal*:
 
 
-`
+```
 - (void) callAnimal
 {
     NSLog(@"Come, %@!", self.name);
 }
-`
+```
 
 For a dog you might want to whistle before you call the name. So you can override this method in the *Dog* implementation to add additional commands. When this program is run, the compiler will override the *Animal* callAnimal method and use the following instead:
 
 
-`
+```
 - (void) callAnimal
 {
     NSLog(@"\*whistle\*");
     NSLog(@"Come, %@!", self.name);
 }
-`
+```
 
 We kept the initial implementation of the *callAnimal* method but added an additional line. If we wanted to streamline this even more we could use the **super** keyword to call our original method inside of our override method. Super basically tells the compiler to look for an implementation starting with the superclass's methods. It would look something like this:
 
 
-`
+```
 - (void) callAnimal
 {
     NSLog(@"\*whistle\*");
     [super callAnimal];
 }
-`
+```
 
 The result would be:
 
-`
+```
 *whistle*
 Come here, Fido!
-`
+```
