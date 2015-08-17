@@ -15,12 +15,6 @@
 @property float  widthInFeet;
 
 
-// setter declarations
-//- (float )heightInFeet;
-//- (void)setHeightInFeet:(float )h;
-//- (float )widthInFeet;
-//- (void)setWidthInFeet:(float )w;
-
 // instance method that calculates area
 - (float)shapeArea;
 
