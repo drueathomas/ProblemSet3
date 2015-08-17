@@ -16,7 +16,8 @@ The *Dog* class probably needs a few unique methods as well that are inherent sp
 {
     NSLog(@"Come, %@!", self.name);
 }
-```
+``
+
 For a dog you might want to whistle before you call the name. So you can override this method in the *Dog* implementation to add additional commands. When this program is run, the compiler will override the *Animal* callAnimal method and use the following instead:
 
 ```Objective C
@@ -25,7 +26,7 @@ For a dog you might want to whistle before you call the name. So you can overrid
     NSLog(@"\*whistle\*");
     NSLog(@"Come, %@!", self.name);
 }
-```
+``
 We kept the initial implementation of the *callAnimal* method but added an additional line. If we wanted to streamline this even more we could use the **super** keyword to call our original method inside of our override method. Super basically tells the compiler to look for an implementation starting with the superclass's methods. It would look something like this:
 ```Objective C
 - (void) callAnimal
@@ -33,10 +34,10 @@ We kept the initial implementation of the *callAnimal* method but added an addit
     NSLog(@"\*whistle\*");
     [super callAnimal];
 }
-```
+``
 The result would be:
 
 ```
 *whistle*
 Come here, Fido!
-```
+``
